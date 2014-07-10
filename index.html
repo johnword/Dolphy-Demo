@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>Dolphy</title>
+	<meta name='description' content='A refreshingly retro audio app.'>
+	<!--Responsive-->
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<!--CSS-->
+	<link rel='stylesheet' href='css/normalize.css'>
+	<link rel='stylesheet' href='css/main.css'>
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+<!--FOUC Fix
+	 <style type="text/css">
+	      .js #flash {display: none;}
+	    </style>
+	    <script type="text/javascript">
+	      document.documentElement.className = 'js';
+	    </script>
+-->
+</head>
+	
+<body class='body'>
+    <header class='header'>
+		<div class='row clearfix'>
+			<div class='column sixth'>
+				<a href='#' class='logo'>Dolphy</a>
+			</div>
+			<div class='column five-sixths'>
+				<nav>
+					<ul>
+						<li><a href='#product'>The App</a></li>
+						<li><a href='#details'>How It Works</a></li>
+						<li><a href='#contact'>Contact</a></li>
+						<li><a href='#'>PRO</a></li>
+					</ul>
+				</nav>
+			</div>			
+		</div>			
+    </header>
+
+	<section id='intro'>
+       	<div class='container'>
+        	<h1>Recalibrate Your Ears</h1><h4>Turn your mobile phone into a TIME MACHINE with filters for your MUSIC. <h4><h4>Designed by <a href='/' target='_blank'>John Word</a></h4>
+        	<img src='img/dolphy-product-main.png' id='main' class='mobile animated fadeInUp'>
+        </div>        
+    </section>
+   
+    <section id='product'>
+    	<div class='container'>
+	    <img src='img/music-device-icon.png' alt='Music Device Icons'>
+	        <h1>Freshly Retro</h1>
+	        <p>Recreate the experience of ballgames on the radio, the mixtape your friend gave you in middle-school, or listen to Nas on a Gramophone.</p><p><a href='#' target='_blank'  class='button'>Learn More</a></p>
+	    </div>
+    </section>
+
+
+
+<!--to deploy if slider malfuntions
+    <section id='details'>
+    	<div class='container'>
+		<div class='row clearfix'>
+				<div class='column third'>
+				<img src='img/streaming-icon.png' alt='Add Your Music Stream'>
+				<h3>Add Your Music Stream</h3>
+				<p>Sync your Spotify, Pandora, iTunes Radio account or link any streaming audio source.</p>
+			</div>
+			<div class='column third'>
+	            <img src='img/dolphy-product-main.png' alt='Select Your Aural Experience'>
+	            <h3>Select Your Aural Experience</h3>
+	            <p>Add retro filters to your stream. Then let the party begin.</p>
+	            <a href='#' target='_blank' class='button'>Learn More</a>
+			</div>
+			<div class='column third'>
+	            <img src='img/microphone-icon.png' alt='Record and Add Filters'>
+	            <h3>Record and Add Filters</h3>
+	            <p>Use the microphone on your device, pick a filter and make your own field recordings.</p>
+	            
+			</div>
+	    </div>
+		</div>
+		</section>
+-->
+    <section id='details'>
+    	<div class='container'>
+    		<h1>How It Works</h1>
+			<div class="banner">	
+				<ul>
+				<li>
+					<div class='container'><img class='slide' src='img/dolphy-product-detail-streaming.png' alt='Add Your Music Stream'>
+					</div>
+					<div class='container'>
+						<h3>Add Your Music Stream</h3>
+						<p>Sync your Spotify, Pandora, iTunes Radio account or link any streaming audio source.</p>
+					</div>
+				</li>
+				<li>
+					<div class='container'>
+					<img class='slide' src='img/dolphy-product-detail.png' alt='Select Your Aural Experience'>
+					</div>
+					<div class='container'>
+						<h3>Select Your Aural Experience</h3>
+						<p>Add retro filters to your stream. Then let the party begin.</p>
+						
+			        </div>	        			
+	        	</li>
+				<li>
+					<div class='container'><img class='slide' src='img/dolphy-product-detail-microphone.png' alt='Record and Add Filters'></div>
+	            <div class='container'>
+		            <h3>Record and Add Filters</h3>
+		            <p>Use the microphone on your device, pick a filter and make your own field recordings.</p></a>
+	            </div>
+	        	</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+    
+    <section id='contact'>
+    	<div class='container'>
+        <h1>Contact</h1>
+        <p>By following these simple steps, you will be on the path to audio enlightenment.<br>In the meantime, keep your feet on the ground and keep reaching for the stars.</p>	        
+        </div>
+
+<!--JAVASCRIPT FORM-->
+
+<div class='container'>
+<form role='form' id='signupForm'>
+<div class='row clearfix'>
+    <div class='column full'>
+      <div class='form-group'>
+        <label for='nameInput'>Your Name</label>
+        <input
+          type='text'
+          class='form-control'
+          name='name'
+          placeholder='J. Doe'
+          data-rules='required'
+          date-message='Please enter your name.'
+        />
+      </div>
+    </div>
+
+	<div class='column full'>
+      <div class='form-group'>
+        <label for='emailInput'>Email Address</label>
+        <input
+          type='text'
+          class='form-control'
+          name='email'
+          placeholder='j@dolphy.com'
+          data-rules='required,email'
+          date-message='Please enter your email.'
+        />
+      </div>
+	</div>
+
+    <div class='column full'>
+      <div class='form-group'>
+        <label for='zipInput'>Add a Comment</label>
+        <input
+          type='text'
+          class='form-control'
+          name='zip'
+          placeholder='Hello!'
+        />
+      </div>
+    </div>
+
+<!--FutureReleaseComponent
+
+	<div class='column full'>
+		<div class='checkbox'>
+			<label>
+				<input
+				type='checkbox'
+				name='agreedTerms'
+				data-rules='required'
+				/>
+			I agree that I am not a robot.
+			</label>
+		</div>
+    </div>
+-->
+    
+	</div>
+	<button type='submit' class='button'>Email Us</button>
+    </form>
+</div>
+
+
+<!--end JAVASCRIPT FORM-->
+
+	<div class='row clearfix'>
+		<div class='google-maps'>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1598.6360570055037!2d-119.79564100000002!3d36.74003899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a411b42a75%3A0xfa08fd536357a03d!2s1555+Van+Ness+Ave!5e0!3m2!1sen!2sus!4v1404909853593" width="1280" height="40" frameborder="0" style="border:0"></iframe>
+		<div>
+	</div>
+</section>
+
+	
+	<footer>
+		<section>
+		<div class='container'>
+			<div class='row clearfix'>
+				<div class='column full'>
+					<!--ADD LATER
+					<a href='' title='Download Dolphy from the App Store'><img class='applink' src='img/app-store.png'></a><a href='' title='Download Dolphy from Google Play'><img class='applink' src='img/android-gp.png'></a>
+					-->
+					<a href='https://www.facebook.com/' title='Dolphy on Facebook'><img class='social' src='img/facebook-128-shell.png'></a>
+					<a href='https://twitter.com/' title='Dolphy on Twitter'><img class='social' src='img/twitter-128-shell.png'></a>
+					<a href='http://www.linkedin.com/company/' title='Dolphy on LinkedIn'><img class='social' src='img/linkedin-128-shell.png'></a>
+					<a href='http://instagram.com/' title='Dolphy on Instagram'><img class='social' src='img/instagram-128-shell.png'></a>
+					<a href='http://www.googleplus.com/user/' title='Dolphy on Google+'><img class='social' height='50' src='img/googleplus-128-shell.png'></a>
+				</div>
+				<div class='column two-thirds'>
+					<p>&copy; 2014 John Word &middot; <a href='#'>Privacy</a> &middot; <a href='#'>Terms</a></p>
+				</div>
+				<div class='column third'>
+					<div class='return'><p><a href='#' class='button'>Back to Top ^</a></p></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</footer>
+
+<!--JAVASCRIPT SLIDER-->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://unslider.com/unslider.min.js"></script>
+	<script type="text/javascript">$(function() {
+	    $('.banner').unslider();
+	});
+		$('.banner').unslider({
+			speed: 500,
+			delay: 10000,
+			keys: true,
+			dots: true,
+			fluid: false,
+		});
+	</script>
+
+	<script scr='http://code.jquery.com/jquery-1.11.0.js'></script>
+	<script scr='js/formy.js'></script>
+	<script scr='js/slide.js'></script>
+
+
+</body>
+</html>

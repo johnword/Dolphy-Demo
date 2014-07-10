@@ -1,0 +1,535 @@
+/*========================================================
+						Layout
+========================================================*/
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font: 100%/1.5 'Muli', sans-serif;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 40rem) {
+	html { font-size: 112%; }
+}
+
+@media (min-width: 64rem) {
+	html { font-size: 120%; }
+}
+
+body {
+  background-color: #497bad;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+/* CHANGE LATER*/
+	font-size: 100%;
+
+}
+
+.body { 
+	margin: 0 auto;
+/* CHANGE LATER*/
+	width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 53rem;
+  width: 90%;
+}
+
+
+.container a:active, .container a:visited {
+	color: fff;
+}
+
+section {
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+section:first-of-type { border-top: none; }
+
+@media (min-width: 40rem) {
+  section { padding: 1rem 0rem; }
+}
+
+/*========================================================
+						Header
+========================================================*/
+
+.logo {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: none;
+  line-height: 40px;
+  padding: 0 20px;
+  color: #5ac8fa;
+  float: left;
+}
+
+@media screen and (max-width: 640px) {
+  .logo {
+    margin-bottom: 0;
+    text-align: center;    
+  }
+}
+
+header {
+  padding: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    padding: 20px 0px;
+  }
+}
+
+.header nav {
+/* CHANGE LATER*/
+  height: 40px;
+  font-size: 100%;
+}
+
+
+.header nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+
+.header nav ul li {
+	float: right;
+	display: inline;
+}
+
+
+.header nav a:link, .header nav a:visited {
+	color: #5ac8fa;
+	display: inline-block;
+	padding: 10px 10px;
+	height: 20px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+
+	.header nav {
+		font-size: 1.2em;
+		height: 1rem;
+		margin-bottom: 1rem;
+	}
+		
+	.header nav ul {
+		list-style: none; 
+		margin: 0 auto;
+		padding-left: 0 10;
+	}
+	
+	.header nav li {
+		margin-left: 0 auto;
+		width: 100%;
+	}
+	
+	.header nav a:link, .header nav a:visited {
+		color: ##5ac8fa;
+		display: block;
+		height: 30px;
+		padding: 5px 0;
+		text-decoration: none;
+  }
+}
+/* CHANGE LATER
+.header nav a:hover {
+	text-decoration: underline;
+}
+*/
+
+/*========================================================
+						Containers
+========================================================*/
+
+
+#intro {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #497bad;
+    background-size: 100%;
+}
+
+#product {
+  background-color: #fff;
+  color: #8e8e93;
+}
+
+#details {
+	background-color: #ededed;
+  color: #8e8e93;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*========================================================
+						Footer
+========================================================*/
+
+.return {
+	float: right;
+}
+
+/* SocialMedia */
+
+.social {
+  display: inline;
+  height: auto;
+  margin: 0 auto;
+  width: 3rem;
+}
+
+@media (min-width: 40rem) {
+  .social {
+    width: 3rem;
+  }
+}
+
+/*========================================================
+						Mobile First Grid
+========================================================*/
+
+.column { margin-bottom: 1.5rem; }
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .column.full { width: 100%; }
+  .column.three-fourths { width: 75%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.fifth { width: 20%; }
+  .column.sixth { width: 16.6%; }
+  .column.five-sixths { width: 83.33%; }
+  .column.flow-opposite { float: right; }
+}
+
+/*========================================================
+            Responsive Nav
+========================================================*
+
+.menu-link { display: none;}
+.menu { 
+  float: left;
+  -webkit-transition: all 0.3s ease;  
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+.menu ul { 
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+.menu > li > ul.sub-menu {
+  min-width: 10em;
+  padding: 4px 0;
+  background-color: #f4f4f4;
+  border: 1px solid #CCC;
+}
+.menu ul li { padding: 0px; }
+.menu > ul > li { display: inline-block; }
+.menu ul li a { display: block; text-decoration: none; color: #000; font-size: .9em; }
+.menu ul li > a { height:58px; padding: 19px 12px; }
+.menu ul ul { 
+  display: none; 
+  position: absolute; 
+  top:100%;
+  min-width: 160px;
+  background-color: #f4f4f4;
+  border: 1px solid #CCC;
+}
+.menu ul li:hover > ul { display: block; }
+.menu ul ul > li { position: relative; }
+.menu ul ul > li a { padding: 5px 15px 5px 10px; height: auto; background-color: #f4f4f4; }
+.menu ul ul > li a:hover { background-color: #42BBA3; color: #fff; }
+.menu ul ul ul { position: absolute; left: 100%; top:0; }
+
+@media all and (max-width: 768px) {
+  .example-header .container { width: 100%; }
+  
+  a.menu-link { display: block; color: #fff; background-color: #333; float: right; text-decoration: none; padding: 19px 10px;}
+  .menu { clear: both; min-width: inherit; float: none; }
+  .menu, .menu > ul ul { overflow: hidden; max-height: 0; background-color: #f4f4f4; }
+  .menu > li > ul.sub-menu { padding: 0px; border: none; }
+  .menu.active, .menu > ul ul.active { max-height: 55em; }
+  .menu ul { display: inline; }
+  .menu > ul { border-top: 1px solid #808080; }
+  .menu li, .menu > ul > li { display: block; }
+  .menu li a { color: #000; display: block; padding: 0.8em; border-bottom: 1px solid #808080; position: relative; }
+  .menu li.has-submenu > a:after {
+    content: '+';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 1.5em;
+    padding: 0.55em 0.5em;
+  }
+  .menu li.has-submenu > a.active:after {
+    content: "-";
+  }
+  .menu ul ul > li a { background-color: #e4e4e4; height:58px; padding: 19px 18px 19px 30px; }
+  .menu ul ul, .menu ul ul ul { display: inherit; position: relative; left: auto; top:auto; border:none; }
+}
+*/
+/*========================================================
+						Elements
+========================================================*/
+
+img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+
+
+.applink {
+  display: inline;
+  height: auto;
+  margin: 0 auto;
+  width: auto;
+}
+
+.banner { 
+  max-width: 100%;
+  position: relative;
+  overflow: auto;
+  background-color: #ededed;
+  color: #8e8e93;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 14rem;
+}
+
+
+
+.banner li {
+  list-style: none;
+}
+
+.banner ul li {
+  float: left;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30rem;
+}
+
+/*========================================================
+						Buttons
+========================================================*/
+
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #5183b6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background: #fff;
+  color: #8e8e93;
+  text-decoration: none;
+}
+
+@media (min-width: 40rem) {
+  .button {
+    font-size: 0.9rem;
+    display: inline-block;
+  }
+}
+
+/*========================================================
+						Links
+========================================================*/
+
+a {	text-decoration: none; }
+
+a:link { color: #fff; }
+
+a:visited { color: #fff;}
+
+/*========================================================
+            Form
+========================================================*/
+
+#signupForm {
+  border-radius: 1px;
+  padding: 2em;
+  line-height: 2em;
+
+}
+
+.checkbox {
+  float: left;
+}
+
+input {
+  background-color: #497bad;
+  border: #fff;
+  color: #ededed;
+  width: 25rem;
+}
+
+/*========================================================
+            Additional Pages
+========================================================*/
+
+#member {
+  background-color: #ededed;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #497bad;
+    background-size: 100%;
+}
+
+#press {
+  background-color: #ededed;
+  color: #8e8e93;
+}
+
+#pro {
+  background-color: #ededed;
+  color: #8e8e93;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*========================================================
+						Animate.css 
+						by Daniel Eden
+========================================================*/
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  } 100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/*========================================================
+						Clearfix 
+						by Nicolas Gallagher
+========================================================*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/*========================================================
+						Responsive Go To
+========================================================*/
+
+/* Small screens (default) 
+html { font-size: 100%; }
+ 
+/* Medium screens (640px) 
+@media (min-width: 40rem) {
+html { font-size: 112%; }
+}
+ 
+/* Large screens (1024px) 
+@media (min-width: 64rem) {
+html { font-size: 120%; }
+}
