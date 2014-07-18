@@ -147,10 +147,26 @@ header {
 		text-decoration: none;
   }
 }
+
 /* CHANGE LATER
 .header nav a:hover {
-	text-decoration: underline;
+	background-color: fff;
 }
+
+nav { width: 100%; }
+nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+nav ul li { display: inline-block; }
+nav ul li a { display: block; padding: 10px 20px; text-decoration: none; color: #444; }
+nav ul li a:hover { background-color: #fff; color: #fff; }
+
+@media (max-width:48.000em){
+  .example-header .container { width: 100%; }
+    nav ul { width: 100%; font-weight: normal; }
+    nav ul li { width: 50%; float: left; }
+    nav ul li:nth-of-type(odd) a { border-right: 1px solid #ccc; }
+    nav ul li a { padding: 8px 0px; border-bottom: 1px solid #ccc; display: block; }
+}
+
 */
 
 /*========================================================
@@ -425,25 +441,46 @@ input {
             Additional Pages
 ========================================================*/
 
-#member {
-  background-color: #ededed;
-    margin-top: 0;
-    margin-bottom: 0;
-    background: #497bad;
-    background-size: 100%;
-}
-
-#press {
-  background-color: #ededed;
-  color: #8e8e93;
-}
-
 #pro {
   background-color: #ededed;
   color: #8e8e93;
   margin-top: 0;
   margin-bottom: 0;
 }
+
+#press {
+  background-color: #fff;
+  color: #8e8e93;
+  text-align: left;
+}
+
+#support {
+  background-color: #ededed;
+  color: #8e8e93;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-size: 100%;
+  text-align: left;
+}
+
+/*#intro {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #497bad;
+    background-size: 100%;
+}
+
+#product {
+  background-color: #fff;
+  color: #8e8e93;
+}
+
+#details {
+  background-color: #ededed;
+  color: #8e8e93;
+  margin-top: 0;
+  margin-bottom: 0;
+}*/
 
 /*========================================================
 						Animate.css 
